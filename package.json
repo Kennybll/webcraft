@@ -1,0 +1,28 @@
+{
+  "name": "@webcraft/repo",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "lerna run dev --stream",
+    "build": "lerna run build --stream",
+    "test": "lerna run test --stream",
+    "test:watch": "lerna run test:watch --stream",
+    "test:e2e": "lerna run test:e2e --stream",
+    "test:e2e:watch": "lerna run test:e2e:watch --stream",
+    "lint": "lerna run lint --stream",
+    "db:generate": "lerna run db:generate --stream",
+    "db:migrate": "lerna run db:migrate --stream",
+    "db:studio": "lerna run db:studio --stream"
+  },
+  "devDependencies": {
+    "bun-types": "1.0.18",
+    "lerna": "8.0.1"
+  },
+  "dependencies": {
+    "@biomejs/biome": "^1.4.1",
+    "@elysiajs/eden": "^0.7.7"
+  }
+}

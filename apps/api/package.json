@@ -1,0 +1,19 @@
+{
+  "name": "@webcraft/api",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "test": "bun test",
+    "test:watch": "bun test --watch"
+  },
+  "dependencies": {
+    "@webcraft/auth": "workspace:1.0.0",
+    "@webcraft/database": "workspace:1.0.0",
+    "@webcraft/logger": "workspace:1.0.0",
+    "elysia": "0.7.30"
+  },
+  "devDependencies": {
+    "bun-types": "1.0.1"
+  },
+  "module": "src/index.js"
+}

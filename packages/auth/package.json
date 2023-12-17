@@ -1,0 +1,11 @@
+{
+    "name": "@webcraft/auth",
+    "version": "1.0.0",
+    "main": "src/index.ts",
+    "types": "src/index.ts",
+    "dependencies": {
+        "@webcraft/database": "workspace:1.0.0",
+        "@lucia-auth/adapter-prisma": "3.0.2",
+        "lucia": "2.7.5"
+    }
+}
